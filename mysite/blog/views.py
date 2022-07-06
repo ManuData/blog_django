@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import json
 
-
+# Datos a modo de test
 test_datos = [0,1,2,30,34,21]
 serie = pd.Series(test_datos,name="test")
 obj = {'test1':1,'test2':2}

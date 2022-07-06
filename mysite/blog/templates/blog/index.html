@@ -1,5 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="es">
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}">
 
 <style>
 
@@ -42,6 +46,7 @@ h2{
 
 <head>
 
+
 </head>
 <body>
 
@@ -80,8 +85,7 @@ h2{
         var test_json = {
     
             'products':[{% for number in numbers %} {
-                'id': '{{number}}'},{% endfor %}]
-            
+                'id': '{{number}}'},{% endfor %}] 
         };
         var obj = {{obj_as_json | safe}};
     </script>
