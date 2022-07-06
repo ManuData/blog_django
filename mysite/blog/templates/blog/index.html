@@ -73,6 +73,20 @@ h2{
             <p>Importante</p>
         </aside>
     </main>
+
+    <!-- Script para pintar datos en consola-->
+
+    <script type="text/javascript">
+        var test_json = {
+    
+            'products':[{% for number in numbers %} {
+                'id': '{{number}}'},{% endfor %}]
+            
+        };
+        var obj = {{obj_as_json | safe}};
+    </script>
+
+    <!-- END script -->
 </body>
 
 </html>
